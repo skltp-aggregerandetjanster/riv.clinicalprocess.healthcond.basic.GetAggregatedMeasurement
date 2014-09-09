@@ -22,6 +22,7 @@ INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid te
 INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid tester av agg tjänst.', 'HSA-ID-4', 0);
 INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid tester av agg tjänst.', 'HSA-ID-5', 0);
 INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid tester av agg tjänst.', 'HSA-ID-6', 0);
+INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid tester av agg tjänst.', 'HSA-ID-7', 0);
 
 -- Sätt upp tjänstekomponent, teststubbe
 INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer/teststub/',@pathToServices), 'Producent vid tester av Aggregerandetjänst.', CONCAT('HSA-ID-TESTSTUBBE-',@popularDomainName), 0);
@@ -75,6 +76,14 @@ and riv.namn = 'RIVTABP21'
 and kontrakt.namnrymd = @serviceContractNamespace
 and producent.hsaId = CONCAT('HSA-ID-TESTSTUBBE-',@popularDomainName);
 
+INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
+select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
+Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
+where adressat.hsaId = 'HSA-ID-7'
+and riv.namn = 'RIVTABP21'
+and kontrakt.namnrymd = @serviceContractNamespace
+and producent.hsaId = CONCAT('HSA-ID-TESTSTUBBE-',@popularDomainName);
+
 
 -- =========================================================================== 
 -- Setup authoriation in TAK
@@ -123,4 +132,6 @@ from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekompon
 where adressat.hsaId = 'HSA-ID-6'
 and kontrakt.namnrymd = @serviceContractNamespace
 and konsument.hsaId = @consumerHsaId;
+
+# Ingen samverkan med producent HSA-ID-7
 

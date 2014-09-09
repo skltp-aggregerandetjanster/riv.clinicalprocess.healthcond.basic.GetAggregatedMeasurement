@@ -43,6 +43,12 @@ WHERE logiskAdressat_id IN (
  WHERE adressat.hsaId = 'HSA-ID-6'
 );
 
+DELETE FROM `LogiskAdress`
+WHERE logiskAdressat_id IN (
+ SELECT id FROM `LogiskAdressat` adressat
+ WHERE adressat.hsaId = 'HSA-ID-7'
+);
+
 -- Ta bort producent
 Delete FROM `Tjanstekomponent`
 WHERE hsaId = CONCAT('HSA-ID-TESTSTUBBE-',@popularDomainName);
@@ -66,3 +72,6 @@ WHERE hsaId = 'HSA-ID-5';
 
 DELETE FROM `LogiskAdressat`
 WHERE hsaId = 'HSA-ID-6';
+
+DELETE FROM `LogiskAdressat`
+WHERE hsaId = 'HSA-ID-7';

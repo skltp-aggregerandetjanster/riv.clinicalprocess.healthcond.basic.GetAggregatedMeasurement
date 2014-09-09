@@ -5,6 +5,7 @@ SET @serviceContractNamespace = 'urn:riv:clinicalprocess:healthcond:basic:GetMea
 SET @popularDomainName = 'Hantera hälsorelaterade tillstånd, basuppgifter - GetMeasurement';
 SET @pathToServices = 'http://localhost:8084/GetMeasurementResponder/service/v1';
 SET @producerHsaId = 'GetAggregatedMeasurement';
+SET @consumerHsaId = 'client';
 
 -- =========================================================================== 
 -- Setup routing in TAK
@@ -27,4 +28,12 @@ where adressat.hsaId = '5565594230'
 and riv.namn = 'RIVTABP21'
 and kontrakt.namnrymd = @serviceContractNamespace
 and producent.hsaId = @producerHsaId;
+
+-- Sätt upp behörighet för klient till aggregerade tjänsten
+INSERT INTO `Anropsbehorighet` (`fromTidpunkt`, `integrationsavtal`, `tomTidpunkt`, `version`, `logiskAdressat_id`, `tjanstekonsument_id`, `tjanstekontrakt_id`)
+select '2013-01-01', 'Aggregerandetjänst' , '2114-12-31', 0, adressat.id, konsument.id, kontrakt.id
+from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekomponent` as konsument
+where adressat.hsaId = '5565594230'
+and kontrakt.namnrymd = @serviceContractNamespace
+and konsument.hsaId = @consumerHsaId;
 

@@ -1,5 +1,6 @@
 package se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic.getaggregatedmeasurement;
 
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.soitoolkit.commons.mule.jaxb.JaxbUtil;
@@ -44,10 +45,17 @@ public class QueryObjectFactoryImpl implements QueryObjectFactory {
 		fc.setRegisteredResidentIdentification(request.getPatientId().getExtension());
 		fc.setServiceDomain(eiServiceDomain);
 		fc.setCategorization(eiCategorization);
-		fc.setSourceSystem(request.getSourceSystemId().getExtension());
+		fc.setSourceSystem(getSourceSystem(request));
 		
 		QueryObject qo = new QueryObject(fc, request);
 
 		return qo;
+	}
+
+	String getSourceSystem(GetMeasurementType request) {
+		if(request.getSourceSystemId() == null || StringUtils.isBlank(request.getSourceSystemId().getExtension())){
+			return null;
+		}
+		return request.getSourceSystemId().getExtension();
 	}
 }
