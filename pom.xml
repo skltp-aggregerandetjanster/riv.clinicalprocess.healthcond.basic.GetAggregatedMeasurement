@@ -49,7 +49,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 		<dependency>
 			<groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
 			<artifactId>GetAggregatedMeasurement-schemas</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 		
 		<!-- To enable possibilities to enable/disable logging to AMQ using property TP_DO_LOG_TO_JMS=false/true -->
