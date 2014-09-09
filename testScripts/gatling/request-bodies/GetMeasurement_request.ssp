@@ -1,0 +1,65 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension><%= patientId %></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:time>
+            <!--Optional:-->
+            <urn2:start></urn2:start>
+            <!--Optional:-->
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:time>
+         <!--Optional:-->
+         <urn1:measurementType>
+            <urn2:code></urn2:code>
+            <urn2:codeSystem></urn2:codeSystem>
+            <!--Optional:-->
+            <urn2:codeSystemName></urn2:codeSystemName>
+            <!--Optional:-->
+            <urn2:codeSystemVersion></urn2:codeSystemVersion>
+            <!--Optional:-->
+            <urn2:displayName></urn2:displayName>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementType>
+         <!--Optional:-->
+         <urn1:measurementValue>
+            <urn2:value></urn2:value>
+            <urn2:unit></urn2:unit>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementValue>
+         <!--Optional:-->
+         <urn1:measurementId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementId>
+         <!--Optional:-->
+         <urn1:careGiverId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careGiverId>
+         <!--Optional:-->
+         <urn1:careUnitId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careUnitId>
+         <!--Optional:-->
+         <urn1:sourceSystemId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:sourceSystemId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>
