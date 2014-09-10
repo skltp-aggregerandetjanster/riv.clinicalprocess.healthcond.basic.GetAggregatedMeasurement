@@ -18,7 +18,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     <artifactId>GetAggregatedMeasurement</artifactId>
-    <version>1.0.0-RC2-SNAPSHOT</version>
+    <version>1.0.0-RC1</version>
     <packaging>mule</packaging>
     <name>GetAggregatedMeasurement</name>
 
@@ -31,9 +31,9 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     </properties>
      
     <scm>
-        <connection>scm:svn:https://skltpservices.googlecode.com/svn/AggregatingServices/riv.clinicalprocess.healthcond.basic/GetAggregatedMeasurement/trunk/</connection>
-        <developerConnection>scm:svn:https://skltpservices.googlecode.com/svn/AggregatingServices/riv.clinicalprocess.healthcond.basic/GetAggregatedMeasurement/trunk/</developerConnection>
-        <url>https://skltpservices.googlecode.com/svn/AggregatingServices/riv.clinicalprocess.healthcond.basic/GetAggregatedMeasurement/trunk/</url>
+        <connection>scm:svn:https://skltpservices.googlecode.com/svn/AggregatingServices/riv.clinicalprocess.healthcond.basic/GetAggregatedMeasurement/tags/GetAggregatedMeasurement-1.0.0-RC1</connection>
+        <developerConnection>scm:svn:https://skltpservices.googlecode.com/svn/AggregatingServices/riv.clinicalprocess.healthcond.basic/GetAggregatedMeasurement/tags/GetAggregatedMeasurement-1.0.0-RC1</developerConnection>
+        <url>https://skltpservices.googlecode.com/svn/AggregatingServices/riv.clinicalprocess.healthcond.basic/GetAggregatedMeasurement/tags/GetAggregatedMeasurement-1.0.0-RC1</url>
     </scm>
     
 	<dependencies>	
