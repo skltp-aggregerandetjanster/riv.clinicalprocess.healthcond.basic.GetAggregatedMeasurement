@@ -23,7 +23,6 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     
     <properties>
         <skltp.agp.version>1.2.1</skltp.agp.version>
-        <GetAggregatedMeasurement.version>${project.version}</GetAggregatedMeasurement.version>
     </properties>
 
 	<dependencies>
@@ -31,13 +30,13 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <dependency>
     	<groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     	<artifactId>GetAggregatedMeasurement</artifactId>
-    	<version>${GetAggregatedMeasurement.version}</version>
+    	<version>${project.version}</version>
     	<type>test-jar</type>
     </dependency>
     <dependency>
     	<groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     	<artifactId>GetAggregatedMeasurement</artifactId>
-    	<version>${GetAggregatedMeasurement.version}</version>
+    	<version>${project.version}</version>
     	<classifier>core</classifier>    	
     </dependency>
     <dependency>
