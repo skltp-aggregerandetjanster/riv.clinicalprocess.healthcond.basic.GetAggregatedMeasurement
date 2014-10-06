@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements. See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License. You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied. See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:riv:clinicalprocess:healthcond:basic:1" xmlns:codes="urn:riv:clinicalprocess:healthcond:basic:enum:1" targetNamespace="urn:riv:clinicalprocess:healthcond:basic:1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:import namespace="urn:riv:clinicalprocess:healthcond:basic:enum:1" schemaLocation="./clinicalprocess_healthcond_basic_enum_1.0.xsd"/>
+	<xs:complexType name="ObservationType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="type" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="time" type="tns:TimePeriodType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="method" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="value" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="targetSite" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="valueNegation" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="approvedForPatient" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="location" type="tns:LocationType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="patient" type="tns:PatientType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="legalAuthenticator" type="tns:LegalAuthenticatorType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="sourceSystem" type="tns:SourceSystemType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="relation" type="tns:RelationType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="performerRole" type="tns:PerformerRoleType" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MeasurementType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="type" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="time" type="tns:TimePeriodType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="method" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="value" type="tns:PQType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="targetSite" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="approvedForPatient" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="device" type="tns:DeviceType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="location" type="tns:LocationType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="patient" type="tns:PatientType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="legalAuthenticator" type="tns:LegalAuthenticatorType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="sourceSystem" type="tns:SourceSystemType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="relation" type="tns:RelationType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="performerRole" type="tns:PerformerRoleType" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AdditionalParticipantType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="type" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="roleCode" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="person" type="tns:PersonType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="careUnit" type="tns:CareUnitType" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddressType">
+		<xs:sequence>
+			<xs:element name="purpose" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="value" type="tns:AddressPartType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddressPartType">
+		<xs:sequence>
+			<xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="role" type="codes:AddressPartTypeEnum" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CareGiverType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CareUnitType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="careGiver" type="tns:CareGiverType" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CVType">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="code" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="codeSystem" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="codeSystemName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="codeSystemVersion" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="displayName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="DateType">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(19|20)\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="DeviceType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="type" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="manufacturerModelName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IIType">
+		<xs:sequence>
+			<xs:element name="root" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="extension" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InformationOwnerType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LegalAuthenticatorType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="time" type="tns:TimeStampType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocationType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="address" type="tns:AddressType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="telecom" type="tns:TelType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PatientType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dateOfBirth" type="tns:DateType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="gender" type="tns:CVType" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PerformerRoleType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="code" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="person" type="tns:PersonType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="careUnit" type="tns:CareUnitType" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PersonType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PQType">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:sequence>
+			<!-- NOTICE DOUBLE BELOW AND REVISE IF NECESSARY -->
+			<xs:element name="value" type="xs:double" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="unit" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ReferredInformationType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="time" type="tns:TimeStampType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="type" type="tns:URNType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="informationOwner" type="tns:InformationOwnerType" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RelationType">
+		<xs:sequence>
+			<xs:element name="code" type="tns:CVType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="referredInformation" type="tns:ReferredInformationType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SourceSystemType">
+		<xs:sequence>
+			<xs:element name="id" type="tns:IIType" minOccurs="1" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TelType">
+		<xs:sequence>
+			<xs:element name="use" type="codes:TelTypeEnum" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TimePeriodType">
+		<xs:annotation>
+			<xs:documentation>
+                Används för att specificera ett datumintervall
+                med hjälp av start- och slutdatum.
+                
+                start: 
+                Startdatum på formatet YYYYMMDDhhmmss
+                end: 
+                Slutdatum på formatet YYYYMMDDhhmmss
+            </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="start" type="tns:TimeStampType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="end" type="tns:TimeStampType" minOccurs="0" maxOccurs="1"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="TimeStampType">
+		<xs:annotation>
+			<xs:documentation>
+                A quantity specifying a point on the axis of natural time.
+                A point in time is most often represented as a calendar
+                expression.
+                
+                The time has the format YYYYMMDDhhmmss
+            </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(19|20)\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])(0[0-9]|1[0-9]|2[0123])([0-5])([0-9])([0-5])([0-9])"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="URNType">
+		<xs:annotation>
+			<xs:documentation>
+Regular expression to validate RFC 2141 URN syntax.
+"urn:[a-zA-Z0-9][a-zA-Z0-9-]{1,31}:([a-zA-Z0-9()+,.:=@;$_!*'-]|%[0-9A-Fa-f]{2})+"
+      </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:anyURI">
+			<xs:pattern value="urn:[a-zA-Z0-9][a-zA-Z0-9-]{1,31}:([a-zA-Z0-9()+,.:=@;$_!*'-]|%[0-9A-Fa-f]{2})+"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
