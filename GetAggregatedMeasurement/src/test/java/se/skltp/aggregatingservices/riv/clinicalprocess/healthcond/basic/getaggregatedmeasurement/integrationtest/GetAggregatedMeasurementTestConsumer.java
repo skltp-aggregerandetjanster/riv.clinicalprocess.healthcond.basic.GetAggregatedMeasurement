@@ -33,7 +33,7 @@ public class GetAggregatedMeasurementTestConsumer extends AbstractTestConsumer<G
 		Holder<ProcessingStatusType> processingStatusHolder = new Holder<ProcessingStatusType>();
 
 		consumer.callService("logical-adress", personnummer, processingStatusHolder, responseHolder);
-		log.info("Returned #timeslots = " + responseHolder.value.getMeasurement().size());
+		log.info("Returned #measurements = " + responseHolder.value.getMeasurement().size());
 	}
 
 	public GetAggregatedMeasurementTestConsumer(String serviceAddress, String senderId, String originalConsumerHsaId) {
@@ -48,7 +48,7 @@ public class GetAggregatedMeasurementTestConsumer extends AbstractTestConsumer<G
 
 	public void callService(String logicalAddress, String registeredResidentId, String starTime, String endTime, Holder<ProcessingStatusType> processingStatusHolder, Holder<GetMeasurementResponseType> responseHolder) {
 
-		log.debug("Calling GetRequestActivities-soap-service with Registered Resident Id = {}", registeredResidentId);
+		log.debug("Calling GetMeasurement-soap-service with Registered Resident Id = {}", registeredResidentId);
 		
 		GetMeasurementType request = new GetMeasurementType();
 
@@ -71,7 +71,7 @@ public class GetAggregatedMeasurementTestConsumer extends AbstractTestConsumer<G
 	
 	public void callServiceIncludeValuesInAllReqParams(String logicalAddress, String registeredResidentId, String starTime, String endTime, Holder<ProcessingStatusType> processingStatusHolder, Holder<GetMeasurementResponseType> responseHolder) {
 
-		log.debug("Calling GetRequestActivities-soap-service with Registered Resident Id = {}", registeredResidentId);
+		log.debug("Calling GetMeasurement-soap-service with Registered Resident Id = {}", registeredResidentId);
 		
 		GetMeasurementType request = new GetMeasurementType();
 
