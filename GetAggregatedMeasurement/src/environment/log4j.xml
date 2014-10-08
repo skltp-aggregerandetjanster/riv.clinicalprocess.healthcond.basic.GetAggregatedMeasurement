@@ -12,8 +12,8 @@
 
     <appender name="ROLLINGFILE" class="org.apache.log4j.RollingFileAppender">
         <param name="file" value="${mule.home}/logs/mule-app-GetAggregatedMeasurement.log" />
-        <param name="MaxFileSize" value="1000KB" />
-        <param name="MaxBackupIndex" value="3" />
+        <param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" />
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d %-5p [%t] %-30c - %m%n" />
         </layout> 
