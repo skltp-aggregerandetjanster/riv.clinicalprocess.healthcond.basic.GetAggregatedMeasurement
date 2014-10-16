@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
 DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOING!
 [soi-toolkit.gen.version=0.6.2-SNAPSHOT]
 [soi-toolkit.gen.type=services]
@@ -9,18 +9,18 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
         <artifactId>GetAggregatedMeasurement-parent</artifactId>
         <version>1.0.0-RC3-SNAPSHOT</version>
     </parent>
-    
+
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     <artifactId>GetAggregatedMeasurement-teststub</artifactId>
     <packaging>mule</packaging>
     <name>GetAggregatedMeasurement-teststub</name>
-    
+
     <properties>
         <skltp.agp.version>1.2.1</skltp.agp.version>
     </properties>
@@ -37,7 +37,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     	<groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     	<artifactId>GetAggregatedMeasurement</artifactId>
     	<version>${project.version}</version>
-    	<classifier>core</classifier>    	
+    	<classifier>core</classifier>
     </dependency>
     <dependency>
         <groupId>se.skltp.agp</groupId>
@@ -49,7 +49,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
           <artifactId>agp-test-common</artifactId>
           <version>${skltp.agp.version}</version>
       </dependency>
-	</dependencies> 
+	</dependencies>
 
     <build>
         <resources>
@@ -62,7 +62,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
             </resource>
         </resources>
 
-		<plugins>   
+		<plugins>
             <plugin>
                 <!-- Add mule-nature to the eclipse-.project-file -->
                 <artifactId>maven-eclipse-plugin</artifactId>

@@ -743,9 +743,9 @@
     </xs:sequence>
   </xs:complexType>
 </xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:endpoint>https://${#Project#serviceEndpointVp}/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement" name="GetMeasurement" bindingOperationName="GetMeasurement" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -778,7 +778,7 @@
          </urn1:measurementType>
          <!--Optional:-->
          <urn1:measurementValue>
-            <urn2:value></urn2:value>
+            <urn2:value>0</urn2:value>
             <urn2:unit></urn2:unit>
             <!--You may enter ANY elements at this point-->
          </urn1:measurementValue>
@@ -810,8 +810,8 @@
       </urn1:GetMeasurement>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="188803099368 - Agda Andersson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
@@ -845,7 +845,7 @@
          </urn1:measurementType>
          <!--Optional:-->
          <urn1:measurementValue>
-            <urn2:value></urn2:value>
+            <urn2:value>0</urn2:value>
             <urn2:unit></urn2:unit>
             <!--You may enter ANY elements at this point-->
          </urn1:measurementValue>
@@ -877,8 +877,8 @@
       </urn1:GetMeasurement>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
@@ -912,7 +912,7 @@
          </urn1:measurementType>
          <!--Optional:-->
          <urn1:measurementValue>
-            <urn2:value></urn2:value>
+            <urn2:value>0</urn2:value>
             <urn2:unit></urn2:unit>
             <!--You may enter ANY elements at this point-->
          </urn1:measurementValue>
@@ -944,8 +944,8 @@
       </urn1:GetMeasurement>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
@@ -979,7 +979,7 @@
          </urn1:measurementType>
          <!--Optional:-->
          <urn1:measurementValue>
-            <urn2:value></urn2:value>
+            <urn2:value>0</urn2:value>
             <urn2:unit></urn2:unit>
             <!--You may enter ANY elements at this point-->
          </urn1:measurementValue>
@@ -1011,8 +1011,8 @@
       </urn1:GetMeasurement>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
@@ -1046,7 +1046,7 @@
          </urn1:measurementType>
          <!--Optional:-->
          <urn1:measurementValue>
-            <urn2:value></urn2:value>
+            <urn2:value>0</urn2:value>
             <urn2:unit></urn2:unit>
             <!--You may enter ANY elements at this point-->
          </urn1:measurementValue>
@@ -1078,8 +1078,8 @@
       </urn1:GetMeasurement>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
@@ -1113,7 +1113,7 @@
          </urn1:measurementType>
          <!--Optional:-->
          <urn1:measurementValue>
-            <urn2:value></urn2:value>
+            <urn2:value>0</urn2:value>
             <urn2:unit></urn2:unit>
             <!--You may enter ANY elements at this point-->
          </urn1:measurementValue>
@@ -2257,7 +2257,7 @@ count(/soap:Envelope/soap:Body/ns1:FindContentResponse/ns1:engagement)</path><co
    <soapenv:Body>
       <urn1:Update>
          <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2271,7 +2271,7 @@ count(/soap:Envelope/soap:Body/ns1:FindContentResponse/ns1:engagement)</path><co
             </urn2:engagement>
          </urn1:engagementTransaction>
          <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2285,7 +2285,7 @@ count(/soap:Envelope/soap:Body/ns1:FindContentResponse/ns1:engagement)</path><co
             </urn2:engagement>
          </urn1:engagementTransaction>
           <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2299,7 +2299,7 @@ count(/soap:Envelope/soap:Body/ns1:FindContentResponse/ns1:engagement)</path><co
             </urn2:engagement>
          </urn1:engagementTransaction>
           <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2324,7 +2324,7 @@ declare namespace mule='http://www.muleumo.org/providers/soap/1.0';
 &lt;/ns2:UpdateResponse></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetMeasurement - 121212121212 - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -2399,7 +2399,7 @@ count(/soap:Envelope/soap:Body/ns2:GetMeasurementResponse/ns2:measurement)</path
    <soapenv:Body>
       <urn1:Update>
          <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:deleteFlag>true</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2413,7 +2413,7 @@ count(/soap:Envelope/soap:Body/ns2:GetMeasurementResponse/ns2:measurement)</path
             </urn2:engagement>
          </urn1:engagementTransaction>
          <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:deleteFlag>true</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2427,7 +2427,7 @@ count(/soap:Envelope/soap:Body/ns2:GetMeasurementResponse/ns2:measurement)</path
             </urn2:engagement>
          </urn1:engagementTransaction>
           <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:deleteFlag>true</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2441,7 +2441,7 @@ count(/soap:Envelope/soap:Body/ns2:GetMeasurementResponse/ns2:measurement)</path
             </urn2:engagement>
          </urn1:engagementTransaction>
           <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:deleteFlag>true</urn2:deleteFlag>
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>${#Project#serviceDomain}</urn2:serviceDomain>
@@ -2464,4 +2464,4 @@ declare namespace mule='http://www.muleumo.org/providers/soap/1.0';
 /soap:Envelope/soap:Body/ns2:UpdateResponse</path><content>&lt;ns2:UpdateResponse xmlns="urn:riv:itintegration:engagementindex:1" xmlns:ns2="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:ns3="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   &lt;ns2:ResultCode>OK&lt;/ns2:ResultCode>
 &lt;/ns2:UpdateResponse></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Teardown TAK" searchProperties="true" id="4d79d41a-75a0-457b-b218-6286a69ce31e"><con:settings/><con:testStep type="manualTestStep" name="Teardown TAK"><con:description>Rensa data i TAK:
-testScripts/sql/GetMeasurement_teardown_tests.sql</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>serviceEndpoint</con:name><con:value>skltp-box-host:8084</con:value></con:property><con:property><con:name>serviceEndpointVp</con:name><con:value>skltp-box-host:20000</con:value></con:property><con:property><con:name>serviceDomain</con:name><con:value>riv:clinicalprocess:healthcond:basic</con:value></con:property><con:property><con:name>categorization</con:name><con:value>chb-gm</con:value></con:property><con:property><con:name>senderId</con:name><con:value>client</con:value></con:property></con:properties><con:wssContainer/><con:sensitiveInformation/></con:soapui-project>
+testScripts/sql/GetMeasurement_teardown_tests.sql</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>serviceEndpoint</con:name><con:value>localhost:8081</con:value></con:property><con:property><con:name>serviceEndpointVp</con:name><con:value>localhost:20000</con:value></con:property><con:property><con:name>serviceDomain</con:name><con:value>riv:clinicalprocess:healthcond:basic</con:value></con:property><con:property><con:name>categorization</con:name><con:value>chb-gm</con:value></con:property><con:property><con:name>senderId</con:name><con:value>client</con:value></con:property></con:properties><con:wssContainer/><con:sensitiveInformation/></con:soapui-project>
