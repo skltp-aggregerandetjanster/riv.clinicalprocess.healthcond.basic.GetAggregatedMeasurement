@@ -13,7 +13,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <parent>
         <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
         <artifactId>GetAggregatedMeasurement-parent</artifactId>
-        <version>1.0.0-RC3-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
@@ -22,7 +22,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <name>GetAggregatedMeasurement-teststub</name>
 
     <properties>
-        <skltp.agp.version>1.2.1</skltp.agp.version>
+        <skltp.agp.version>1.2.3</skltp.agp.version>
     </properties>
 
 	<dependencies>

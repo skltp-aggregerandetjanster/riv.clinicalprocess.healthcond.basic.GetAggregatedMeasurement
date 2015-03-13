@@ -18,7 +18,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     <artifactId>GetAggregatedMeasurement-parent</artifactId>
-    <version>1.0.0-RC3-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>GetAggregatedMeasurement-parent</name>
 
@@ -32,9 +32,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <modules>
       <module>GetAggregatedMeasurement</module>
       <module>GetAggregatedMeasurement-teststub</module>
-
       <module>GetAggregatedMeasurement-schemas</module>
-
     </modules>
 
 		<build>
@@ -54,5 +52,5 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 					</plugins>
 			</pluginManagement>
 		</build>
-		
+
   </project>
