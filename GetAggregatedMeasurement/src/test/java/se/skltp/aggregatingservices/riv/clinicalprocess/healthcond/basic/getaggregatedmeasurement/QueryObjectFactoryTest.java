@@ -14,9 +14,9 @@ import org.junit.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementType;
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.ObjectFactory;
-import se.riv.clinicalprocess.healthcond.basic.v1.IIType;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementType;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.ObjectFactory;
+import riv.clinicalprocess.healthcond.basic.v1.IIType;
 import se.skltp.agp.riv.itintegration.engagementindex.findcontentresponder.v1.FindContentType;
 import se.skltp.agp.service.api.QueryObject;
 import se.skltp.agp.test.producer.TestProducerDb;

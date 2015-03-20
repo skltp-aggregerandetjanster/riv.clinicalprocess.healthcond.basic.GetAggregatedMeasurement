@@ -7,18 +7,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.soitoolkit.commons.mule.util.ThreadSafeSimpleDateFormat;
 
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementResponseType;
-import se.riv.clinicalprocess.healthcond.basic.v1.CVType;
-import se.riv.clinicalprocess.healthcond.basic.v1.DeviceType;
-import se.riv.clinicalprocess.healthcond.basic.v1.IIType;
-import se.riv.clinicalprocess.healthcond.basic.v1.LegalAuthenticatorType;
-import se.riv.clinicalprocess.healthcond.basic.v1.LocationType;
-import se.riv.clinicalprocess.healthcond.basic.v1.MeasurementType;
-import se.riv.clinicalprocess.healthcond.basic.v1.PQType;
-import se.riv.clinicalprocess.healthcond.basic.v1.PatientType;
-import se.riv.clinicalprocess.healthcond.basic.v1.PerformerRoleType;
-import se.riv.clinicalprocess.healthcond.basic.v1.SourceSystemType;
-import se.riv.clinicalprocess.healthcond.basic.v1.TimePeriodType;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementResponseType;
+import riv.clinicalprocess.healthcond.basic.v1.CVType;
+import riv.clinicalprocess.healthcond.basic.v1.DeviceType;
+import riv.clinicalprocess.healthcond.basic.v1.IIType;
+import riv.clinicalprocess.healthcond.basic.v1.LegalAuthenticatorType;
+import riv.clinicalprocess.healthcond.basic.v1.LocationType;
+import riv.clinicalprocess.healthcond.basic.v1.MeasurementType;
+import riv.clinicalprocess.healthcond.basic.v1.PQType;
+import riv.clinicalprocess.healthcond.basic.v1.PatientType;
+import riv.clinicalprocess.healthcond.basic.v1.PerformerRoleType;
+import riv.clinicalprocess.healthcond.basic.v1.SourceSystemType;
+import riv.clinicalprocess.healthcond.basic.v1.TimePeriodType;
 import se.skltp.agp.test.producer.TestProducerDb;
 
 public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {

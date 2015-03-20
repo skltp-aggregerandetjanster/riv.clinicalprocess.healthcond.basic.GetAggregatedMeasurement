@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.soitoolkit.commons.mule.jaxb.JaxbUtil;
 import org.w3c.dom.Node;
 
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementType;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementType;
 import se.skltp.agp.riv.itintegration.engagementindex.findcontentresponder.v1.FindContentType;
 import se.skltp.agp.service.api.QueryObject;
 import se.skltp.agp.service.api.QueryObjectFactory;
