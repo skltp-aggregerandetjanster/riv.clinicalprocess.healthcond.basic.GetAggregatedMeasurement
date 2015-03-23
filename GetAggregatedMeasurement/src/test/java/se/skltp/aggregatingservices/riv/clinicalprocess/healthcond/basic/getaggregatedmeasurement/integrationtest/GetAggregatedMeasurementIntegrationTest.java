@@ -147,7 +147,7 @@ public class GetAggregatedMeasurementIntegrationTest extends AbstractAggregateIn
     }
 
 	/**
-	 * Perform a test that is expected to casue the source system to fail with its processing
+	 * Perform a test that is expected to cause the source system to fail with its processing
 	 */
     @Test
 	public void test_fault_invalidInput() throws Exception {
@@ -155,7 +155,8 @@ public class GetAggregatedMeasurementIntegrationTest extends AbstractAggregateIn
     	List<ProcessingStatusRecordType> statusList = doTest(TEST_LOGICAL_ADDRESS_1, TEST_RR_ID_FAULT_INVALID_ID, 1);
 		
     	// Verify the Processing Status, expect a processing failure from the source system
-		assertProcessingStatusNoDataSynchFailed(statusList.get(0), TEST_LOGICAL_ADDRESS_1, VIRTUALIZATION_PLATFORM, EXPECTED_ERR_INVALID_ID_MSG);
+	    assertProcessingStatusNoDataSynchFailed(statusList.get(0), TEST_LOGICAL_ADDRESS_1, VIRTUALIZATION_PLATFORM, EXPECTED_ERR_INVALID_ID_MSG);
+//      assertProcessingStatusNoDataSynchFailed(statusList.get(0), TEST_LOGICAL_ADDRESS_1, VIRTUALIZATION_PLATFORM, "java.lang.RuntimeException: Invalid Id: 1920011189228");
 	}
     
     /**

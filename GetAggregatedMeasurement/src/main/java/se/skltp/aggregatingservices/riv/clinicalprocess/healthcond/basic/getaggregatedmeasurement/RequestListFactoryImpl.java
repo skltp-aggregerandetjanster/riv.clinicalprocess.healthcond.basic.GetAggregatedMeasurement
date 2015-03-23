@@ -34,55 +34,48 @@ public class RequestListFactoryImpl implements RequestListFactory {
 	 * 2. request = originalRequest (ursprungligt anrop från konsument)
 	 */
 	@Override
-	public List<Object[]> createRequestList(QueryObject qo, FindContentResponseType src) {
+    public List<Object[]> createRequestList(QueryObject qo, FindContentResponseType src) {
 
-		GetMeasurementType originalRequest = (GetMeasurementType)qo.getExtraArg();
-		String reqCareUnit = "";
-		if (originalRequest.getSourceSystemId() != null) {
-		    reqCareUnit =  originalRequest.getSourceSystemId().getExtension();
-		}
-		        
-		FindContentResponseType eiResp = (FindContentResponseType)src;
-		List<EngagementType> inEngagements = eiResp.getEngagement();
-		
-		log.info("Got {} hits in the engagement index", inEngagements.size());
+        GetMeasurementType originalRequest = (GetMeasurementType)qo.getExtraArg();
+        String reqCareUnit = "";
+        if (originalRequest.getSourceSystemId() != null) {
+            reqCareUnit = originalRequest.getSourceSystemId().getExtension();
+        }
 
-		Map<String, List<String>> sourceSystem_pdlUnitList_map = new HashMap<String, List<String>>();
-		
-		for (EngagementType inEng : inEngagements) {
-			
-			//TKB 4.1 Uppdatering av engagemangsindex
-			//LogicalAddress: Samma värde som fältet Source System.
-			
-			if (isPartOf(reqCareUnit, inEng.getLogicalAddress())) {
-				// Add pdlUnit to source system
-				log.debug("Add source system: {} for PDL unit: {}", inEng.getSourceSystem(), inEng.getLogicalAddress());
-				addPdlUnitToSourceSystem(sourceSystem_pdlUnitList_map, inEng.getSourceSystem(), inEng.getLogicalAddress());
-			}
-		}
+        FindContentResponseType eiResp = (FindContentResponseType)src;
+        List<EngagementType> inEngagements = eiResp.getEngagement();
 
-		// Prepare the result of the transformation as a list of request-payloads, 
-		// one payload for each unique logical-address (e.g. source system since we are using systemaddressing),
-		// each payload built up as an object-array according to the JAX-WS signature for the method in the service interface
-		List<Object[]> reqList = new ArrayList<Object[]>();
-		for (Entry<String, List<String>> entry : sourceSystem_pdlUnitList_map.entrySet()) {
-			String sourceSystem = entry.getKey();
-			if (log.isInfoEnabled()) log.info("Calling source system using logical address {} for patient id {}", sourceSystem, originalRequest.getPatientId().getExtension());
-			GetMeasurementType request = originalRequest;
-			Object[] reqArr = new Object[] {sourceSystem, request};
-			reqList.add(reqArr);
-		}
+        log.info("Got {} hits in the engagement index", inEngagements.size());
 
-		log.debug("Transformed payload: {}", reqList);
-		return reqList;
-	}
+        Map<String, List<String>> sourceSystem_pdlUnitList_map = new HashMap<String, List<String>>();
+
+        for (EngagementType inEng : inEngagements) {
+            if (isPartOf(reqCareUnit, inEng.getLogicalAddress())) {
+                // Add pdlUnit to source system
+                log.debug("Add source system: {} for PDL unit: {}", inEng.getSourceSystem(), inEng.getLogicalAddress());
+                addPdlUnitToSourceSystem(sourceSystem_pdlUnitList_map, inEng.getSourceSystem(), inEng.getLogicalAddress());
+            }
+        }
+
+        // Prepare the result of the transformation as a list of request-payloads,
+        // one payload for each unique logical-address (e.g. source system since we are using system addressing),
+        // each payload built up as an object-array according to the JAX-WS signature for the method in the service interface
+        List<Object[]> reqList = new ArrayList<Object[]>();
+        for (Entry<String, List<String>> entry : sourceSystem_pdlUnitList_map.entrySet()) {
+            String sourceSystem = entry.getKey();
+            log.info("Calling source system using logical address {} for subject of care id {}", sourceSystem, originalRequest.getPatientId().getExtension());
+            GetMeasurementType request = originalRequest;
+            Object[] reqArr = new Object[] {sourceSystem, request};
+            reqList.add(reqArr);
+        }
+        log.info("Transformed payload: {}", reqList);
+        return reqList;
+    }
+
 
 	boolean isPartOf(String careUnitId, String careUnit) {
-		
 		log.debug("Check careunit {} equals expected {}", careUnitId, careUnit);
-		
 		if (StringUtils.isBlank(careUnitId)) return true;
-		
 		return careUnitId.equals(careUnit);
 	}
 

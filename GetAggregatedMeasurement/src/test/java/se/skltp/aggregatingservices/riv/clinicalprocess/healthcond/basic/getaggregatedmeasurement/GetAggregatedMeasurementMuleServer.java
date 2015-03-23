@@ -1,5 +1,4 @@
 package se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic.getaggregatedmeasurement;
-
  
 import org.soitoolkit.commons.mule.test.StandaloneMuleServer;
 
@@ -8,18 +7,14 @@ import org.soitoolkit.commons.mule.util.RecursiveResourceBundle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 public class GetAggregatedMeasurementMuleServer {
 
-
-	public static final String MULE_SERVER_ID   = "GetAggregatedMeasurement";
- 
+	public static final String MULE_SERVER_ID = "GetAggregatedMeasurement";
 
 	private static final Logger logger = LoggerFactory.getLogger(GetAggregatedMeasurementMuleServer.class);
     private static final RecursiveResourceBundle rb = new RecursiveResourceBundle("GetAggregatedMeasurement-config");
 
 	public static void main(String[] args) throws Exception {
-	
  
         // Configure the mule-server:
         //
@@ -49,6 +44,5 @@ public class GetAggregatedMeasurementMuleServer {
 
 	    logger.info("URL: {}", url);
     	return url;
- 
     }	
 }

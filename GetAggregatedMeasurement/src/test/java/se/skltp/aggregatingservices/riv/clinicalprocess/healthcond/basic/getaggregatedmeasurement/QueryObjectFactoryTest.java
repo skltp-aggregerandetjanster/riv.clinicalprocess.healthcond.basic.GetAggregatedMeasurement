@@ -59,7 +59,6 @@ public class QueryObjectFactoryTest {
 		assertNull(findContent.getDataController());
 		assertNull(findContent.getMostRecentContent());
 		assertNull(findContent.getOwner());
-		
 	}
 	
 	@Test
@@ -88,11 +87,10 @@ public class QueryObjectFactoryTest {
 		assertNull(findContent.getDataController());
 		assertNull(findContent.getMostRecentContent());
 		assertNull(findContent.getOwner());
-		
 	}
 	
 	@Test
-	public void findContentIsCreatedWithNullSourceSystem() throws Exception{
+	public void findContentIsCreatedWithNullSourceSystem() throws Exception {
 		
 		//Create request
 		GetMeasurementType request = new GetMeasurementType();
@@ -136,7 +134,7 @@ public class QueryObjectFactoryTest {
 
 	private Node createNode(GetMeasurementType request) throws Exception{
 		
-		// Since the class GetDiagnosisType don't have an @XmlRootElement annotation
+		// Since the class GetDiagnosisType doesn't have an @XmlRootElement annotation
         // we need to use the ObjectFactory to add it.
 		JAXBElement<GetMeasurementType> requestJaxb = OF.createGetMeasurement(request);
 		

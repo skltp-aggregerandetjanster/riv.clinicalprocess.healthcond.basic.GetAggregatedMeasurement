@@ -39,7 +39,7 @@ public class QueryObjectFactoryImpl implements QueryObjectFactory {
 		
 		GetMeasurementType request = (GetMeasurementType)ju.unmarshal(node);
 		
-		if (log.isDebugEnabled()) log.debug("Transformed payload for pid: {}", request.getPatientId().getExtension());
+		log.info("Transformed payload for pid: {}", request.getPatientId().getExtension());
 
 		FindContentType fc = new FindContentType();		
 		fc.setRegisteredResidentIdentification(request.getPatientId().getExtension());

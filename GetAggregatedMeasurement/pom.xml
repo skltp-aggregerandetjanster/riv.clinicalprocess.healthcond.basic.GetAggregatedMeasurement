@@ -16,7 +16,6 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
         <version>1.0.0-RC4-SNAPSHOT</version>
     </parent>
 
-
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     <artifactId>GetAggregatedMeasurement</artifactId>
     <packaging>mule</packaging>

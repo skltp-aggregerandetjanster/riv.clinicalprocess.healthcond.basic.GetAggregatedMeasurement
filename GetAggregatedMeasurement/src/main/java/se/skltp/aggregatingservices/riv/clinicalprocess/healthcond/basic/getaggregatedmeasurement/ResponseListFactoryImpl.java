@@ -20,6 +20,8 @@ public class ResponseListFactoryImpl implements ResponseListFactory {
 	
 	@Override
 	public String getXmlFromAggregatedResponse(QueryObject queryObject, List<Object> aggregatedResponseList) {
+
+	    log.info("getXmlFromAggregatedResponse");
 		GetMeasurementResponseType aggregatedResponse = new GetMeasurementResponseType();
 
 	    for (Object object : aggregatedResponseList) {
@@ -29,10 +31,10 @@ public class ResponseListFactoryImpl implements ResponseListFactory {
 
 	    if (log.isInfoEnabled()) {
     		String patientId = queryObject.getFindContent().getRegisteredResidentIdentification();
-        	log.info("Returning {} aggregated measurements for patient id {}", aggregatedResponse.getMeasurement().size() ,patientId);
+        	log.info("Returning {} aggregated measurements for patient id {}", aggregatedResponse.getMeasurement().size(), patientId);
         }
         
-        // Since the class GetRequestActivitiesResponseType don't have an @XmlRootElement annotation
+        // Since the class GetRequestActivitiesResponseType doesn't have an @XmlRootElement annotation
         // we need to use the ObjectFactory to add it.
         return jaxbUtil.marshal(OF.createGetMeasurementResponse(aggregatedResponse));
 	}

@@ -28,24 +28,6 @@ public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {
 	private static final Logger log = LoggerFactory.getLogger(GetAggregatedMeasurementTestProducerDb.class);
 	
 	@Override
-	public Object processRequest(String logicalAddress,
-			String registeredResidentId) {
-		
-		/*
-		 *  Return an error-message if error logical address HSA-ID-6 is called.
-		 *  
-		 *  This case was added to be able to test the case when a system returns an error for a certain
-		 *  RR_ID and another system returns a OK response. This case should probably be added to the
-		 *  agp test common TestProducerDb, but for know its included here to test the concept.
-		 */
-		if (TEST_LOGICAL_ADDRESS_6.equals(logicalAddress)) {
-			throw new RuntimeException("Logical address to trigger exception was called: " + logicalAddress);
-		}
-		
-		return super.processRequest(logicalAddress, registeredResidentId);
-	}
-
-	@Override
 	public Object createResponse(Object... responseItems) {
 		log.debug("Creates a response with {} items", responseItems);
 		GetMeasurementResponseType response = new GetMeasurementResponseType();
@@ -65,8 +47,6 @@ public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {
 
 		MeasurementType response = new MeasurementType();
 
-		// TODO: CHANGE GENERATED CODE - START
-		
 		response.setApprovedForPatient(true);
 		
 		//MeasurementType
@@ -87,8 +67,6 @@ public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {
 		response.setMethod(createCVType());
 		response.setSourceSystem(createSourceSystem());
 		response.setTargetSite(createCVType());
-		
-		// TODO: CHANGE GENERATED CODE - END
 		
 		return response;
 	}
