@@ -9,9 +9,8 @@ import java.util.Map.Entry;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.soitoolkit.commons.mule.util.ThreadSafeSimpleDateFormat;
 
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementType;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementType;
 import se.skltp.agp.riv.itintegration.engagementindex.findcontentresponder.v1.FindContentResponseType;
 import se.skltp.agp.riv.itintegration.engagementindex.v1.EngagementType;
 import se.skltp.agp.service.api.QueryObject;
@@ -20,7 +19,6 @@ import se.skltp.agp.service.api.RequestListFactory;
 public class RequestListFactoryImpl implements RequestListFactory {
 
 	private static final Logger log = LoggerFactory.getLogger(RequestListFactoryImpl.class);
-	private static final ThreadSafeSimpleDateFormat df = new ThreadSafeSimpleDateFormat("YYYYMMDDhhmmss");
 
 	/**
 	 * Filtrera svarsposter från i EI (ei-engagement) baserat parametrar i GetMeasurement requestet (req).
@@ -36,99 +34,48 @@ public class RequestListFactoryImpl implements RequestListFactory {
 	 * 2. request = originalRequest (ursprungligt anrop från konsument)
 	 */
 	@Override
-	public List<Object[]> createRequestList(QueryObject qo, FindContentResponseType src) {
+    public List<Object[]> createRequestList(QueryObject qo, FindContentResponseType src) {
 
-		GetMeasurementType originalRequest = (GetMeasurementType)qo.getExtraArg();
-		// TODO: CHANGE GENERATED CODE - START
-		//Date reqFrom = parseTs(originalRequest.getFromDate());
-		//Date reqTo   = parseTs(originalRequest.getToDate());
-		String reqCareUnit = originalRequest.getSourceSystemId().getExtension();
-		// TODO: CHANGE GENERATED CODE - END
+        GetMeasurementType originalRequest = (GetMeasurementType)qo.getExtraArg();
+        String reqCareUnit = "";
+        if (originalRequest.getSourceSystemId() != null) {
+            reqCareUnit = originalRequest.getSourceSystemId().getExtension();
+        }
 
-		FindContentResponseType eiResp = (FindContentResponseType)src;
-		List<EngagementType> inEngagements = eiResp.getEngagement();
-		
-		log.info("Got {} hits in the engagement index", inEngagements.size());
+        FindContentResponseType eiResp = (FindContentResponseType)src;
+        List<EngagementType> inEngagements = eiResp.getEngagement();
 
-		Map<String, List<String>> sourceSystem_pdlUnitList_map = new HashMap<String, List<String>>();
-		
-		for (EngagementType inEng : inEngagements) {
+        log.info("Got {} hits in the engagement index", inEngagements.size());
 
-			// Filter
-			// TODO: CHANGE GENERATED CODE - START
-			//if (isBetween(reqFrom, reqTo, inEng.getMostRecentContent()) &&
-			//	isPartOf(reqCareUnitList, inEng.getLogicalAddress())) {
-			
-			//TKB 4.1 Uppdatering av engagemangsindex
-			//LogicalAddress: Samma värde som fältet Source System.
-			
-			if (isPartOf(reqCareUnit, inEng.getLogicalAddress())) {
-			// TODO: CHANGE GENERATED CODE - END
+        Map<String, List<String>> sourceSystem_pdlUnitList_map = new HashMap<String, List<String>>();
 
-				// Add pdlUnit to source system
-				log.debug("Add source system: {} for PDL unit: {}", inEng.getSourceSystem(), inEng.getLogicalAddress());
-				addPdlUnitToSourceSystem(sourceSystem_pdlUnitList_map, inEng.getSourceSystem(), inEng.getLogicalAddress());
-			}
-		}
+        for (EngagementType inEng : inEngagements) {
+            if (isPartOf(reqCareUnit, inEng.getLogicalAddress())) {
+                // Add pdlUnit to source system
+                log.debug("Add source system: {} for PDL unit: {}", inEng.getSourceSystem(), inEng.getLogicalAddress());
+                addPdlUnitToSourceSystem(sourceSystem_pdlUnitList_map, inEng.getSourceSystem(), inEng.getLogicalAddress());
+            }
+        }
 
-		// Prepare the result of the transformation as a list of request-payloads, 
-		// one payload for each unique logical-address (e.g. source system since we are using systemaddressing),
-		// each payload built up as an object-array according to the JAX-WS signature for the method in the service interface
-		List<Object[]> reqList = new ArrayList<Object[]>();
-		
-		for (Entry<String, List<String>> entry : sourceSystem_pdlUnitList_map.entrySet()) {
+        // Prepare the result of the transformation as a list of request-payloads,
+        // one payload for each unique logical-address (e.g. source system since we are using system addressing),
+        // each payload built up as an object-array according to the JAX-WS signature for the method in the service interface
+        List<Object[]> reqList = new ArrayList<Object[]>();
+        for (Entry<String, List<String>> entry : sourceSystem_pdlUnitList_map.entrySet()) {
+            String sourceSystem = entry.getKey();
+            log.info("Calling source system using logical address {} for subject of care id {}", sourceSystem, originalRequest.getPatientId().getExtension());
+            GetMeasurementType request = originalRequest;
+            Object[] reqArr = new Object[] {sourceSystem, request};
+            reqList.add(reqArr);
+        }
+        log.info("Transformed payload: {}", reqList);
+        return reqList;
+    }
 
-			String sourceSystem = entry.getKey();
 
-			if (log.isInfoEnabled()) log.info("Calling source system using logical address {} for patient id {}", sourceSystem, originalRequest.getPatientId().getExtension());
-
-			// TODO: CHANGE GENERATED CODE - START
-			GetMeasurementType request = originalRequest;
-			// TODO: CHANGE GENERATED CODE - END
-			
-			Object[] reqArr = new Object[] {sourceSystem, request};
-			
-			reqList.add(reqArr);
-		}
-
-		log.debug("Transformed payload: {}", reqList);
-
-		return reqList;
-	}
-
-//	Date parseTs(String ts) {
-//		try {
-//			if (ts == null || ts.length() == 0) {
-//				return null;
-//			} else {
-//				return df.parse(ts);
-//			}
-//		} catch (ParseException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
-//
-//	boolean isBetween(Date from, Date to, String tsStr) {
-//		try {
-//			if (log.isDebugEnabled()) {
-//				log.debug("Is {} between {} and ", new Object[] {tsStr, from, to});
-//			}
-//			
-//			Date ts = df.parse(tsStr);
-//			if (from != null && from.after(ts)) return false;
-//			if (to != null && to.before(ts)) return false;
-//			return true;
-//		} catch (ParseException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
-	
 	boolean isPartOf(String careUnitId, String careUnit) {
-		
 		log.debug("Check careunit {} equals expected {}", careUnitId, careUnit);
-		
 		if (StringUtils.isBlank(careUnitId)) return true;
-		
 		return careUnitId.equals(careUnit);
 	}
 

@@ -9,11 +9,8 @@ public class RequestListFactoryTest {
 	
 	@Test
 	public void isPartOf(){
-
 		assertTrue(new RequestListFactoryImpl().isPartOf("UNIT2", "UNIT2"));
-		
 		assertTrue(new RequestListFactoryImpl().isPartOf(null, "UNIT2"));
-		
 		assertTrue(new RequestListFactoryImpl().isPartOf("", "UNIT2"));
 	}
 	
@@ -22,5 +19,4 @@ public class RequestListFactoryTest {
 		assertFalse(new RequestListFactoryImpl().isPartOf("UNIT2", "UNIT3"));
 		assertFalse(new RequestListFactoryImpl().isPartOf("UNIT2", null));
 	}
-	
 }

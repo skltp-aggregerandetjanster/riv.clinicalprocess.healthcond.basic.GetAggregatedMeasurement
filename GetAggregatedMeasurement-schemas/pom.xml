@@ -13,7 +13,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 	<parent>
         <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
         <artifactId>GetAggregatedMeasurement-parent</artifactId>
-        <version>1.0.0-RC3</version>
+        <version>1.0.0-RC4</version>
     </parent>
 
 	<groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
@@ -60,15 +60,15 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 					                    <extraarg>-p</extraarg>
 					                    <extraarg>http://www.w3.org/2005/08/addressing=org.w3c.addressing.v1</extraarg>
 					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1=se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1</extraarg>
+					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1=riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1</extraarg>
 					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementInitiator:1=se.riv.clinicalprocess.healthcond.basic.getmeasurementinitiator.v1</extraarg>
+					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementInitiator:1=riv.clinicalprocess.healthcond.basic.getmeasurementinitiator.v1</extraarg>
 					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21=se.riv.clinicalprocess.healthcond.basic.getmeasurement.v1.rivtabp21</extraarg>
+					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21=riv.clinicalprocess.healthcond.basic.getmeasurement.v1.rivtabp21</extraarg>
 					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:itintegration:registry:1=se.riv.itintegration.registry.v1</extraarg>
+					                    <extraarg>urn:riv:itintegration:registry:1=riv.itintegration.registry.v1</extraarg>
 					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:1=se.riv.clinicalprocess.healthcond.basic.v1</extraarg>
+					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:1=riv.clinicalprocess.healthcond.basic.v1</extraarg>
 					                  </extraargs>
 					                </wsdloption>
 								</wsdlOptions>

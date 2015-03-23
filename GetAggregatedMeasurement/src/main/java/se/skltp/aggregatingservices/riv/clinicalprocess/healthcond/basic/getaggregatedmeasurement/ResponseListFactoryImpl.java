@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.soitoolkit.commons.mule.jaxb.JaxbUtil;
 
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementResponseType;
-import se.riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.ObjectFactory;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.GetMeasurementResponseType;
+import riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1.ObjectFactory;
 import se.skltp.agp.riv.interoperability.headers.v1.ProcessingStatusType;
 import se.skltp.agp.service.api.QueryObject;
 import se.skltp.agp.service.api.ResponseListFactory;
@@ -20,6 +20,8 @@ public class ResponseListFactoryImpl implements ResponseListFactory {
 	
 	@Override
 	public String getXmlFromAggregatedResponse(QueryObject queryObject, List<Object> aggregatedResponseList) {
+
+	    log.info("getXmlFromAggregatedResponse");
 		GetMeasurementResponseType aggregatedResponse = new GetMeasurementResponseType();
 
 	    for (Object object : aggregatedResponseList) {
@@ -29,10 +31,10 @@ public class ResponseListFactoryImpl implements ResponseListFactory {
 
 	    if (log.isInfoEnabled()) {
     		String patientId = queryObject.getFindContent().getRegisteredResidentIdentification();
-        	log.info("Returning {} aggregated measurements for patient id {}", aggregatedResponse.getMeasurement().size() ,patientId);
+        	log.info("Returning {} aggregated measurements for patient id {}", aggregatedResponse.getMeasurement().size(), patientId);
         }
         
-        // Since the class GetRequestActivitiesResponseType don't have an @XmlRootElement annotation
+        // Since the class GetRequestActivitiesResponseType doesn't have an @XmlRootElement annotation
         // we need to use the ObjectFactory to add it.
         return jaxbUtil.marshal(OF.createGetMeasurementResponse(aggregatedResponse));
 	}
