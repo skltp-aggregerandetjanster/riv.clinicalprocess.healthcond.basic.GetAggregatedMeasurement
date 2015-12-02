@@ -21,10 +21,6 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <packaging>mule</packaging>
     <name>GetAggregatedMeasurement</name>
 
-    <properties>
-        <skltp.agp.version>1.2.3</skltp.agp.version>
-    </properties>
-
 		<dependencies>
         <dependency>
 		    <groupId>se.skltp.agp</groupId>

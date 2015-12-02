@@ -10,17 +10,21 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 
 	<modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.soitoolkit.commons.poms</groupId>
-        <artifactId>soitoolkit-default-parent</artifactId>
-        <version>0.6.1</version>
-    </parent>
+	<parent>
+      <groupId>se.skltp.commons</groupId>
+      <artifactId>skltp-commons-mule-parent</artifactId>
+      <version>1.0.1</version>
+  </parent>
 
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     <artifactId>GetAggregatedMeasurement-parent</artifactId>
     <version>1.0.0-RC5-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>GetAggregatedMeasurement-parent</name>
+
+		<properties>
+	    <skltp.agp.version>1.3.7</skltp.agp.version>
+	  </properties>
 
 		<scm>
 			<url>http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.basic.GetAggregatedMeasurement</url>
