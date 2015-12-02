@@ -23,8 +23,7 @@ import se.skltp.agp.test.producer.TestProducerDb;
 
 public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {
 	
-	ThreadSafeSimpleDateFormat sdf = new ThreadSafeSimpleDateFormat("YYYYMMddHHmmss");
-
+    private static final ThreadSafeSimpleDateFormat sdf = new ThreadSafeSimpleDateFormat("yyyyMMddHHmmss");
 	private static final Logger log = LoggerFactory.getLogger(GetAggregatedMeasurementTestProducerDb.class);
 	
 	@Override
@@ -40,10 +39,8 @@ public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {
 	@Override
 	public Object createResponseItem(String logicalAddress, String registeredResidentId, String businessObjectId, String time) {
 		
-		if (log.isDebugEnabled()) {
-			log.debug("Created one response item for logical-address {}, registeredResidentId {} and businessObjectId {}",
+        log.info("Created one response item for logical-address {}, registeredResidentId {} and businessObjectId {}",
 				new Object[] {logicalAddress, registeredResidentId, businessObjectId});
-		}
 
 		MeasurementType response = new MeasurementType();
 
@@ -67,6 +64,8 @@ public class GetAggregatedMeasurementTestProducerDb extends TestProducerDb {
 		response.setMethod(createCVType());
 		response.setSourceSystem(createSourceSystem());
 		response.setTargetSite(createCVType());
+		
+		// response.getSourceSystem().getId().setExtension(logicalAddress);
 		
 		return response;
 	}

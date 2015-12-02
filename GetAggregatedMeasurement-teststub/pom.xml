@@ -13,17 +13,13 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <parent>
         <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
         <artifactId>GetAggregatedMeasurement-parent</artifactId>
-        <version>1.0.0-RC4</version>
+        <version>1.0.0-RC5-SNAPSHOT</version>
     </parent>
 
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
     <artifactId>GetAggregatedMeasurement-teststub</artifactId>
     <packaging>mule</packaging>
     <name>GetAggregatedMeasurement-teststub</name>
-
-    <properties>
-        <skltp.agp.version>1.2.3</skltp.agp.version>
-    </properties>
 
 	<dependencies>
 	  <!-- dependencies to the integration component that contains the services to stub -->

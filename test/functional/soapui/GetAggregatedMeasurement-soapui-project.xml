@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="GetAggregatedMeasurements" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="PingForConfigurationResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21}PingForConfigurationResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl"><con:part><con:url>http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PingForConfigurationInteraction" targetNamespace="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:rgy="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:monitoring:PingForConfigurationInitiator:1" xmlns:tjsr="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1" xmlns:tns="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<con:soapui-project activeEnvironment="Default" name="GetAggregatedMeasurement" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" id="c71df016-2a11-4262-9944-e883f6db2b0c" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="PingForConfigurationResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21}PingForConfigurationResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl" id="38641a3a-6ab5-447d-917b-63e362cbd57e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl"><con:part><con:url>http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PingForConfigurationInteraction" targetNamespace="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:rgy="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:monitoring:PingForConfigurationInitiator:1" xmlns:tjsr="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1" xmlns:tns="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xs:schema targetNamespace="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21">
       <xs:import namespace="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1" schemaLocation="http://localhost:8081/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21?xsd=PingForConfigurationResponder_1.0.xsd"/>
@@ -162,7 +162,7 @@
   <xs:simpleType name="LogicalAddressType">
     <xs:restriction base="xs:string"/>
   </xs:simpleType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1:PingForConfiguration" name="PingForConfiguration" bindingOperationName="PingForConfiguration" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="pingForConfiguration"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1:PingForConfiguration" name="PingForConfiguration" bindingOperationName="PingForConfiguration" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="88e77163-ce83-4a4d-ad8a-ddf78610b317"><con:settings/><con:call name="pingForConfiguration" id="9e62acf1-9d36-4611-a3c6-140c0529913d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/agp/getaggregatedmeasurement/itintegration/monitoring/PingForConfiguration/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1">
    <soapenv:Header>
       <urn:LogicalAddress>?</urn:LogicalAddress>
    </soapenv:Header>
@@ -173,7 +173,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:PingForConfiguration>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1:PingForConfiguration"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="GetMeasurementResponderBinding" type="wsdl" bindingName="{urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21}GetMeasurementResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8081/GetMeasurementResponder/service/v1?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8081/GetMeasurementResponder/service/v1?wsdl"><con:part><con:url>http://localhost:8081/GetMeasurementResponder/service/v1?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="GetMeasurementInteraction" targetNamespace="urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementInitiator:1" xmlns:tjsr="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:tns="urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1:PingForConfiguration"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="GetMeasurementResponderBinding" type="wsdl" bindingName="{urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21}GetMeasurementResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8081/GetMeasurementResponder/service/v1?wsdl" id="2db5797e-c0e7-48d4-8394-37c45907001a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8081/GetMeasurementResponder/service/v1?wsdl"><con:part><con:url>http://localhost:8081/GetMeasurementResponder/service/v1?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="GetMeasurementInteraction" targetNamespace="urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementInitiator:1" xmlns:tjsr="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:tns="urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xs:schema targetNamespace="urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21">
       <xs:import namespace="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" schemaLocation="http://localhost:8081/GetMeasurementResponder/service/v1?xsd=GetMeasurementResponder_1.0.xsd"/>
@@ -742,7 +742,7 @@
       <xs:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:endpoint>https://${#Project#serviceEndpointVp}/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint><con:endpoint>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement" name="GetMeasurement" bindingOperationName="GetMeasurement" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:endpoint>https://${#Project#serviceEndpointVp}/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint><con:endpoint>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement" name="GetMeasurement" bindingOperationName="GetMeasurement" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="0ec72a4a-54cc-4b5e-9e25-27ce008c5174"><con:settings/><con:call name="121212121212 - Tolvan Tolvansson" id="55df1be7-887d-42e7-99b4-e08c4a6b64cd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -809,7 +809,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="188803099368 - Agda Andersson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="188803099368 - Agda Andersson" id="b8dab4ff-dfe6-444b-970c-cade4cfaaadf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -876,7 +876,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden" id="c24df341-71cc-4907-a3d9-10f0b153f5c1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -943,7 +943,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer" id="9276b149-1245-4e5c-b3d0-a54f235ac081"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -1010,7 +1010,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson" id="278efd6b-3765-4309-a809-f9b9e81899b1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -1077,7 +1077,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm" id="64770b3c-90ac-4808-99cd-26aa664a4f27"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}/GetMeasurementResponder/service/v1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -1144,7 +1144,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="UpdateResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:engagementindex:Update:1:rivtabp21}UpdateResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://${#Project#serviceEndpoint}:8070/vp/Update/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl"><con:part><con:url>http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="UpdateInteraction" targetNamespace="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:engagementindex:UpdateInitiator:1" xmlns:tjsr="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:tns="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="UpdateResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:engagementindex:Update:1:rivtabp21}UpdateResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://${#Project#serviceEndpoint}:8070/vp/Update/1/rivtabp21?wsdl" id="c96207ed-c7ab-42e3-87d8-e646b0def190" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl"><con:part><con:url>http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="UpdateInteraction" targetNamespace="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:engagementindex:UpdateInitiator:1" xmlns:tjsr="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:tns="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xs:schema targetNamespace="urn:riv:itintegration:engagementindex:Update:1:rivtabp21">
       <xs:import namespace="urn:riv:itintegration:engagementindex:UpdateResponder:1" schemaLocation="http://33.33.33.33:8070/vp/Update/1/rivtabp21?xsd=UpdateResponder_1.0.xsd"/>
@@ -1328,7 +1328,7 @@
       <xs:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update" name="Update" bindingOperationName="Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="188803099368 - Agda Andersson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update" name="Update" bindingOperationName="Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="d8fb1a0a-14bc-4e20-bf06-a01d1cf2cca4"><con:settings/><con:call name="188803099368 - Agda Andersson" id="002f123a-56a2-467b-bf6d-c698c5da6b5b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1337,7 +1337,7 @@
          <urn1:engagementTransaction/>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="121212121212 - Tolvan Tolvansson" id="2ef38f28-85fe-4185-a6bd-0af4fb4caf71"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1387,7 +1387,7 @@
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer" id="c0932c97-f9e7-4f0b-8e1b-4cf1224e5550"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1396,7 +1396,7 @@
          <urn1:engagementTransaction/>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson" id="77264df1-b7a3-484a-8659-5bdc2f9739e4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1418,7 +1418,7 @@
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm" id="0ee8e8e6-c41a-4a4a-bf00-88527bbe28db"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1468,7 +1468,7 @@
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden" id="c7173397-3617-41ed-9412-7730962458a8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1490,7 +1490,7 @@
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="FindContentResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21}FindContentResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?wsdl"><con:part><con:url>http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="FindContentInteraction" targetNamespace="urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:engagementindex:FindContentInitiator:1" xmlns:tjsr="urn:riv:itintegration:engagementindex:FindContentResponder:1" xmlns:tns="urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="FindContentResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21}FindContentResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?wsdl" id="29a52a79-d18b-4c95-ac32-3a8cc19ac014" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?wsdl"><con:part><con:url>http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="FindContentInteraction" targetNamespace="urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:engagementindex:FindContentInitiator:1" xmlns:tjsr="urn:riv:itintegration:engagementindex:FindContentResponder:1" xmlns:tns="urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xs:schema targetNamespace="urn:riv:itintegration:engagementindex:FindContent:1:rivtabp21">
       <xs:import namespace="urn:riv:itintegration:engagementindex:FindContentResponder:1" schemaLocation="http://skltp-box-host:8070/vp/FindContent/1/rivtabp21?xsd=FindContentResponder_1.0.xsd"/>
@@ -1682,7 +1682,7 @@
       <xs:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://skltp-box-host:8070/vp/FindContent/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:itintegration:engagementindex:FindContentResponder:1:FindContent" name="FindContent" bindingOperationName="FindContent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="194911172296 - Sven Sturesson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/FindContent/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:FindContentResponder:1">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://skltp-box-host:8070/vp/FindContent/1/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:itintegration:engagementindex:FindContentResponder:1:FindContent" name="FindContent" bindingOperationName="FindContent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="be3a8349-0e04-44a7-92db-fe1d68a65a12"><con:settings/><con:call name="194911172296 - Sven Sturesson" id="5f381ec0-4caa-48fa-a180-cf03b2746fd6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpointVp}/vp/FindContent/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:FindContentResponder:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1693,8 +1693,374 @@
          <urn1:categorization>${#Project#categorization}</urn1:categorization>
       </urn1:FindContent>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:FindContentResponder:1:FindContent"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="SetUp EI"><con:description>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21
-https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SetUp engagements in EI" searchProperties="true" id="1e56e42d-e4f4-4347-90a1-2d297657d8a9"><con:settings/><con:testStep type="request" name="Update - 188803099368 - Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 188803099368 - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:FindContentResponder:1:FindContent"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="TestSuite for dev, skltp-box" id="55dfcffc-3648-427d-8b4d-f0a18525ae00"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1:Hämta data från bakomliggande producenter" searchProperties="true" id="d3b864f8-0587-4f8d-a327-6d089ffdf3d6"><con:settings/><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson" id="93e3d1c1-4800-45cf-af21-52adb5865349"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8cd6fa59-0ca8-4b88-8a60-ff714dbf4d17"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-skltp-correlation-id" value="321"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope 
+  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+  xmlns:urn="urn:riv:itintegration:registry:1" 
+  xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" 
+  xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>121212121212</urn2:extension>
+         </urn1:patientId>
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="0a5e1e14-01ec-4172-9900-767f1309a893"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault" id="969c2002-43f3-4cde-ae33-062cc574470d"/><con:assertion type="XPath Match" name="XPath Match" id="efbbeacb-ade4-451a-b0d1-28378a2a5dbc"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response" id="097d49c8-9005-420b-ac41-f03b2ca51ffb"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem" id="50fecd62-f18d-4d80-92f3-aebe666c464f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2e3a2f6c-456e-419b-8c14-9fd4190cba41"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-skltp-correlation-id" value=""/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>121212121212</urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:time>
+            <!--Optional:-->
+            <urn2:start></urn2:start>
+            <!--Optional:-->
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:time>
+         <!--Optional:-->
+         <urn1:measurementType>
+            <urn2:code></urn2:code>
+            <urn2:codeSystem></urn2:codeSystem>
+            <!--Optional:-->
+            <urn2:codeSystemName></urn2:codeSystemName>
+            <!--Optional:-->
+            <urn2:codeSystemVersion></urn2:codeSystemVersion>
+            <!--Optional:-->
+            <urn2:displayName></urn2:displayName>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementType>
+         <!--Optional:-->
+         <urn1:measurementValue>
+            <urn2:value>0</urn2:value>
+            <urn2:unit>UNIT</urn2:unit>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementValue>
+         <!--Optional:-->
+         <urn1:measurementId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementId>
+         <!--Optional:-->
+         <urn1:careGiverId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careGiverId>
+         <!--Optional:-->
+         <urn1:careUnitId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careUnitId>
+         <!--Optional:-->
+         <urn1:sourceSystemId>
+            <urn2:root>1.2.752.129.2.1.4.1</urn2:root>
+            <urn2:extension>HSA-ID-4</urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:sourceSystemId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="2b580800-cad9-4a13-8e4f-93b6a6cec55b"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="f37a408a-f671-4a19-ae98-8ac9207efc15"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match" id="b3f61501-855b-4900-9423-86d59b0b3bb6"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
+declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+count(/soap:Envelope/soap:Body/ns2:GetMeasurementResponse/ns2:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response" id="2cb41548-c384-46df-900c-1f2d2714ee06"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="813800e6-55e6-4067-b46a-1248ed61dce4"><con:settings/><con:testStep type="request" name="GetMeasurement - Agda Andersson" id="c0f7abc5-99c7-4e5b-af19-6cc4c3ba522e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2bb09caa-b5d1-4274-9508-690e7a086ccd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-skltp-correlation-id" value=""/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>188803099368</urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:time>
+            <!--Optional:-->
+            <urn2:start></urn2:start>
+            <!--Optional:-->
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:time>
+         <!--Optional:-->
+         <urn1:measurementType>
+            <urn2:code></urn2:code>
+            <urn2:codeSystem></urn2:codeSystem>
+            <!--Optional:-->
+            <urn2:codeSystemName></urn2:codeSystemName>
+            <!--Optional:-->
+            <urn2:codeSystemVersion></urn2:codeSystemVersion>
+            <!--Optional:-->
+            <urn2:displayName></urn2:displayName>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementType>
+         <!--Optional:-->
+         <urn1:measurementValue>
+            <urn2:value>0</urn2:value>
+            <urn2:unit>UNIT</urn2:unit>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementValue>
+         <!--Optional:-->
+         <urn1:measurementId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementId>
+         <!--Optional:-->
+         <urn1:careGiverId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careGiverId>
+         <!--Optional:-->
+         <urn1:careUnitId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careUnitId>
+         <!--Optional:-->
+         <urn1:sourceSystemId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:sourceSystemId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="c4de6e33-1f57-451f-b9b4-742331882c97"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="8bc9c658-b2c4-41c6-8a09-ba0e3dc23b6d"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count" id="72a3b4ed-b676-403e-bbb4-bd5f992743e6"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault" id="24325415-7db9-4e3b-a66b-8ff2f5b91ca6"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
+declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett sytem, endast engagemang i ett system" searchProperties="true" id="f486436c-9797-41a1-98b7-3775f53b8b5a"><con:settings/><con:testStep type="request" name="GetMeasurement - Sven Sturesson" id="99618952-ead7-4a68-aa7c-26e0ed13e724"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="00d6849f-afd6-4b80-9c0a-a314de63b277"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-skltp-correlation-id" value=""/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>194911172296</urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:time>
+            <!--Optional:-->
+            <urn2:start></urn2:start>
+            <!--Optional:-->
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:time>
+         <!--Optional:-->
+         <urn1:measurementType>
+            <urn2:code></urn2:code>
+            <urn2:codeSystem></urn2:codeSystem>
+            <!--Optional:-->
+            <urn2:codeSystemName></urn2:codeSystemName>
+            <!--Optional:-->
+            <urn2:codeSystemVersion></urn2:codeSystemVersion>
+            <!--Optional:-->
+            <urn2:displayName></urn2:displayName>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementType>
+         <!--Optional:-->
+         <urn1:measurementValue>
+            <urn2:value>0</urn2:value>
+            <urn2:unit>UNIT</urn2:unit>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementValue>
+         <!--Optional:-->
+         <urn1:measurementId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementId>
+         <!--Optional:-->
+         <urn1:careGiverId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careGiverId>
+         <!--Optional:-->
+         <urn1:careUnitId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careUnitId>
+         <!--Optional:-->
+         <urn1:sourceSystemId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:sourceSystemId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="9e19aa21-e571-46db-b5a2-a4e3e1bdaf8c"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="40163386-4025-4505-bfbd-d5fe10567842"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count" id="e3a6351f-c23e-4cc6-81b4-673146e2e2de"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault" id="3cd7ff7a-8860-4a73-9244-f8f194c68aae"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
+declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Timeout från system" searchProperties="true" id="e8645862-852c-46c0-9068-281a2c85b676"><con:settings/><con:testStep type="request" name="GetMeasurement - Ulla Alm - Timeout" id="d6f50851-13ca-49aa-a270-25a645bfabd8"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Ulla Alm - Timeout" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="793a9d47-2c82-4633-8a43-2e3b42bf5601"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-skltp-correlation-id" value=""/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>198611062384</urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:time>
+            <!--Optional:-->
+            <urn2:start></urn2:start>
+            <!--Optional:-->
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:time>
+         <!--Optional:-->
+         <urn1:measurementType>
+            <urn2:code></urn2:code>
+            <urn2:codeSystem></urn2:codeSystem>
+            <!--Optional:-->
+            <urn2:codeSystemName></urn2:codeSystemName>
+            <!--Optional:-->
+            <urn2:codeSystemVersion></urn2:codeSystemVersion>
+            <!--Optional:-->
+            <urn2:displayName></urn2:displayName>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementType>
+         <!--Optional:-->
+         <urn1:measurementValue>
+            <urn2:value>0</urn2:value>
+            <urn2:unit>UNIT</urn2:unit>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementValue>
+         <!--Optional:-->
+         <urn1:measurementId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementId>
+         <!--Optional:-->
+         <urn1:careGiverId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careGiverId>
+         <!--Optional:-->
+         <urn1:careUnitId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careUnitId>
+         <!--Optional:-->
+         <urn1:sourceSystemId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:sourceSystemId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="a09780b2-b7cd-4045-81a4-d66335ee76ce"/><con:assertion type="XPath Match" name="Timeout count" id="196fb3bb-09c8-4a43-acfd-e1c20d8f7219"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatus count" id="5ae25bb8-f2b0-459f-a5b3-409980e1e525"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count" id="870b9e9a-177a-4aae-90e3-f01759e9622e"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="7f2c4026-db44-474f-8160-acc80cf1e80e"><con:settings/><con:testStep type="request" name="GetMeasurement - Gunbritt Boden - Error" id="086b5b57-dc7e-4e58-9320-07e0955f91a5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Gunbritt Boden - Error" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="93d94cb0-e3c6-4764-bc5a-e7d4255f0d93"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
+  &lt;con:entry key="x-skltp-correlation-id" value=""/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetMeasurement>
+         <urn1:patientId>
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>192011189228</urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:time>
+            <!--Optional:-->
+            <urn2:start></urn2:start>
+            <!--Optional:-->
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:time>
+         <!--Optional:-->
+         <urn1:measurementType>
+            <urn2:code></urn2:code>
+            <urn2:codeSystem></urn2:codeSystem>
+            <!--Optional:-->
+            <urn2:codeSystemName></urn2:codeSystemName>
+            <!--Optional:-->
+            <urn2:codeSystemVersion></urn2:codeSystemVersion>
+            <!--Optional:-->
+            <urn2:displayName></urn2:displayName>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementType>
+         <!--Optional:-->
+         <urn1:measurementValue>
+            <urn2:value>0</urn2:value>
+            <urn2:unit>UNIT</urn2:unit>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementValue>
+         <!--Optional:-->
+         <urn1:measurementId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:measurementId>
+         <!--Optional:-->
+         <urn1:careGiverId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careGiverId>
+         <!--Optional:-->
+         <urn1:careUnitId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:careUnitId>
+         <!--Optional:-->
+         <urn1:sourceSystemId>
+            <urn2:root></urn2:root>
+            <urn2:extension></urn2:extension>
+            <!--You may enter ANY elements at this point-->
+         </urn1:sourceSystemId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="d02bab0b-9116-4e3b-852d-eb25cca2c482"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="efd5718d-909b-4214-9d5d-86db15d170c5"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Error count" id="0a73a0ad-1522-4bbf-8684-fbe9bf87c680"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count" id="a77e638b-478a-403d-b259-ccabf5d728df"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>http://ine-dit-app02.sth.basefarm.net:9009/GetAggregatedMeasurement/service/v1</con:value></con:property><con:property><con:name>agg-env-skltp-box</con:name><con:value>http://33.33.33.33:8081/GetAggregatedMeasurement/service/v1</con:value></con:property><con:property><con:name>agg-env-dit</con:name><con:value>http://ine-dit-app02.sth.basefarm.net:9009/GetAggregatedMeasurement/service/v1</con:value></con:property></con:properties></con:testSuite><con:testSuite name="SetUp EI" id="0e97eb22-7e4a-469f-83c9-e89fe330c2e3"><con:description>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21
+https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SetUp engagements in EI" searchProperties="true" id="1e56e42d-e4f4-4347-90a1-2d297657d8a9"><con:settings/><con:testStep type="request" name="Update - 188803099368 - Agda Andersson" id="ba75891d-55ad-420a-9118-de155ec58a4f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 188803099368 - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="919b24cb-4dac-4a39-9a17-99f9fd1240d1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1703,7 +2069,7 @@ https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/
          <urn1:engagementTransaction/>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 121212121212 - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="e087f813-ebd0-4a05-bcfe-f106a67a19e5"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 121212121212 - Tolvan Tolvansson" id="38f50dcc-1e27-454e-b37b-1f1aee8f51f6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="01204f25-6c4b-4e51-a51a-bbb3960d4916"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1753,7 +2119,7 @@ https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194804032094 - Laban Meijer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194804032094 - Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="ae81cdfd-ea6d-4e52-8071-ef930f58cd36"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194804032094 - Laban Meijer" id="48782892-01b9-4a07-ab12-2b10336927ae"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194804032094 - Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="674a61da-e11e-47c3-ad63-39a4f45e50ff"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1775,7 +2141,7 @@ https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194911172296 - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194911172296 - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="2e12cf7f-b913-4906-b4fa-90dc7aa95c95"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194911172296 - Sven Sturesson" id="e6227654-36c1-4265-9a25-6d71b60738aa"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194911172296 - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="4bf66207-4299-49e1-8b2c-c0ed867df502"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1811,7 +2177,7 @@ https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 198611062384 - Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 198611062384 - Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="2df49ad8-7a6f-4c44-9a1a-285c16074b75"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 198611062384 - Ulla Alm" id="5ab9add4-5f88-4be1-a099-8b7c0b65ce1a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 198611062384 - Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="948fdaac-774f-4562-abaa-0b6c2ee67ef0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1861,7 +2227,7 @@ https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 192011189228 - Gunbritt Boden"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 192011189228 - Gunbritt Boden" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="32e2ad51-fd7c-4661-918c-3ea88456aab9"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 192011189228 - Gunbritt Boden" id="abfb98dc-5fe7-48c7-8adf-84c2a7088fa9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 192011189228 - Gunbritt Boden" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="00965df7-da8a-43bb-93bc-7f106e9bd99e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1883,363 +2249,7 @@ https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>ei-env</con:name><con:value>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:value></con:property></con:properties></con:testSuite><con:testSuite name="TestSuite for Dev"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1:Hämta data från bakomliggande producenter" searchProperties="true" id="d3b864f8-0587-4f8d-a327-6d089ffdf3d6"><con:settings/><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetMeasurement>
-         <urn1:patientId>
-            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
-            <urn2:extension>121212121212</urn2:extension>
-         </urn1:patientId>
-      </urn1:GetMeasurement>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetMeasurement>
-         <urn1:patientId>
-            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
-            <urn2:extension>121212121212</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:time>
-            <!--Optional:-->
-            <urn2:start></urn2:start>
-            <!--Optional:-->
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:time>
-         <!--Optional:-->
-         <urn1:measurementType>
-            <urn2:code></urn2:code>
-            <urn2:codeSystem></urn2:codeSystem>
-            <!--Optional:-->
-            <urn2:codeSystemName></urn2:codeSystemName>
-            <!--Optional:-->
-            <urn2:codeSystemVersion></urn2:codeSystemVersion>
-            <!--Optional:-->
-            <urn2:displayName></urn2:displayName>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementType>
-         <!--Optional:-->
-         <urn1:measurementValue>
-            <urn2:value>0</urn2:value>
-            <urn2:unit>UNIT</urn2:unit>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementValue>
-         <!--Optional:-->
-         <urn1:measurementId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementId>
-         <!--Optional:-->
-         <urn1:careGiverId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careGiverId>
-         <!--Optional:-->
-         <urn1:careUnitId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careUnitId>
-         <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root>1.2.752.129.2.1.4.1</urn2:root>
-            <urn2:extension>HSA-ID-4</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetMeasurement>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
-declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-count(/soap:Envelope/soap:Body/ns2:GetMeasurementResponse/ns2:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="813800e6-55e6-4067-b46a-1248ed61dce4"><con:settings/><con:testStep type="request" name="GetMeasurement - Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetMeasurement>
-         <urn1:patientId>
-            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
-            <urn2:extension>188803099368</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:time>
-            <!--Optional:-->
-            <urn2:start></urn2:start>
-            <!--Optional:-->
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:time>
-         <!--Optional:-->
-         <urn1:measurementType>
-            <urn2:code></urn2:code>
-            <urn2:codeSystem></urn2:codeSystem>
-            <!--Optional:-->
-            <urn2:codeSystemName></urn2:codeSystemName>
-            <!--Optional:-->
-            <urn2:codeSystemVersion></urn2:codeSystemVersion>
-            <!--Optional:-->
-            <urn2:displayName></urn2:displayName>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementType>
-         <!--Optional:-->
-         <urn1:measurementValue>
-            <urn2:value>0</urn2:value>
-            <urn2:unit>UNIT</urn2:unit>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementValue>
-         <!--Optional:-->
-         <urn1:measurementId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementId>
-         <!--Optional:-->
-         <urn1:careGiverId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careGiverId>
-         <!--Optional:-->
-         <urn1:careUnitId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careUnitId>
-         <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetMeasurement>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
-declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett sytem, endast engagemang i ett system" searchProperties="true" id="f486436c-9797-41a1-98b7-3775f53b8b5a"><con:settings/><con:testStep type="request" name="GetMeasurement - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetMeasurement>
-         <urn1:patientId>
-            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
-            <urn2:extension>194911172296</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:time>
-            <!--Optional:-->
-            <urn2:start></urn2:start>
-            <!--Optional:-->
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:time>
-         <!--Optional:-->
-         <urn1:measurementType>
-            <urn2:code></urn2:code>
-            <urn2:codeSystem></urn2:codeSystem>
-            <!--Optional:-->
-            <urn2:codeSystemName></urn2:codeSystemName>
-            <!--Optional:-->
-            <urn2:codeSystemVersion></urn2:codeSystemVersion>
-            <!--Optional:-->
-            <urn2:displayName></urn2:displayName>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementType>
-         <!--Optional:-->
-         <urn1:measurementValue>
-            <urn2:value>0</urn2:value>
-            <urn2:unit>UNIT</urn2:unit>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementValue>
-         <!--Optional:-->
-         <urn1:measurementId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementId>
-         <!--Optional:-->
-         <urn1:careGiverId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careGiverId>
-         <!--Optional:-->
-         <urn1:careUnitId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careUnitId>
-         <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetMeasurement>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
-declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Timeout från system" searchProperties="true" id="e8645862-852c-46c0-9068-281a2c85b676"><con:settings/><con:testStep type="request" name="GetMeasurement - Ulla Alm - Timeout"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Ulla Alm - Timeout" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetMeasurement>
-         <urn1:patientId>
-            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
-            <urn2:extension>198611062384</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:time>
-            <!--Optional:-->
-            <urn2:start></urn2:start>
-            <!--Optional:-->
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:time>
-         <!--Optional:-->
-         <urn1:measurementType>
-            <urn2:code></urn2:code>
-            <urn2:codeSystem></urn2:codeSystem>
-            <!--Optional:-->
-            <urn2:codeSystemName></urn2:codeSystemName>
-            <!--Optional:-->
-            <urn2:codeSystemVersion></urn2:codeSystemVersion>
-            <!--Optional:-->
-            <urn2:displayName></urn2:displayName>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementType>
-         <!--Optional:-->
-         <urn1:measurementValue>
-            <urn2:value>0</urn2:value>
-            <urn2:unit>UNIT</urn2:unit>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementValue>
-         <!--Optional:-->
-         <urn1:measurementId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementId>
-         <!--Optional:-->
-         <urn1:careGiverId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careGiverId>
-         <!--Optional:-->
-         <urn1:careUnitId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careUnitId>
-         <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetMeasurement>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="Timeout count"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="7f2c4026-db44-474f-8160-acc80cf1e80e"><con:settings/><con:testStep type="request" name="GetMeasurement - Gunbritt Boden - Error"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Gunbritt Boden - Error" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
-  &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetMeasurement>
-         <urn1:patientId>
-            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
-            <urn2:extension>192011189228</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:time>
-            <!--Optional:-->
-            <urn2:start></urn2:start>
-            <!--Optional:-->
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:time>
-         <!--Optional:-->
-         <urn1:measurementType>
-            <urn2:code></urn2:code>
-            <urn2:codeSystem></urn2:codeSystem>
-            <!--Optional:-->
-            <urn2:codeSystemName></urn2:codeSystemName>
-            <!--Optional:-->
-            <urn2:codeSystemVersion></urn2:codeSystemVersion>
-            <!--Optional:-->
-            <urn2:displayName></urn2:displayName>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementType>
-         <!--Optional:-->
-         <urn1:measurementValue>
-            <urn2:value>0</urn2:value>
-            <urn2:unit>UNIT</urn2:unit>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementValue>
-         <!--Optional:-->
-         <urn1:measurementId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:measurementId>
-         <!--Optional:-->
-         <urn1:careGiverId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careGiverId>
-         <!--Optional:-->
-         <urn1:careUnitId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:careUnitId>
-         <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root></urn2:root>
-            <urn2:extension></urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetMeasurement>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Error count"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>http://ine-dit-app02.sth.basefarm.net:9009/GetAggregatedMeasurement/service/v1</con:value></con:property></con:properties></con:testSuite><con:testSuite name="TestSuite for Test &amp; QA"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1:Hämta data från bakomliggande producenter" searchProperties="true" id="15717fd8-26e3-495e-ac88-e49b231599eb"><con:settings/><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="30b6fdf6-b95c-4fb2-aaab-2079d0ec6260"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>ei-env</con:name><con:value>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:value></con:property></con:properties></con:testSuite><con:testSuite name="TestSuite for Test &amp; QA" id="0147aa18-78bf-4bae-8c68-baa326d2a037"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1:Hämta data från bakomliggande producenter" searchProperties="true" id="15717fd8-26e3-495e-ac88-e49b231599eb"><con:settings/><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson" id="c32f2ae9-da80-4a04-97ea-dd43be619b5c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="61876cc8-ad68-41f8-a6d8-4c7487204998"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -2254,7 +2264,7 @@ count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildc
          </urn1:patientId>
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="43fffcff-dc5e-4d79-bcab-aeddfef55678"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault" id="f5e52740-7ee7-4fc9-ba5c-f13cc633374f"/><con:assertion type="XPath Match" name="XPath Match" id="efcf3286-4d7a-44e9-ba49-1ea8fa8c0fcc"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response" id="66c4c6b8-218f-43f6-9e3a-a082a51aae36"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem" id="ec95fde1-4833-458c-842a-75f0d719ab57"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Tolvan Tolvansson - selected sourcesystem" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="99ac48ae-170d-4555-866c-14d29a04646c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -2321,9 +2331,9 @@ count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildc
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="e3f04d25-bf66-471b-8b98-8b9abf7271c6"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="16db8811-948f-43c4-a19c-317419a91e79"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="5c2904e9-eb01-4c44-9e82-3bcf03e8a495"><con:settings/><con:testStep type="request" name="GetMeasurement - Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match" id="861d39a9-810f-4fdb-a6f5-9bacfc728b4e"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="5c2904e9-eb01-4c44-9e82-3bcf03e8a495"><con:settings/><con:testStep type="request" name="GetMeasurement - Agda Andersson" id="da15cc93-908e-49f1-8e40-31b612d4afa5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="0f70d4e5-afd0-4cd0-86d0-6dd72503e965"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -2390,11 +2400,11 @@ count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</p
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="6407e691-0161-4e05-b5e6-d0af8258805d"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="052f6625-e18c-4add-a481-6880c25ed9c5"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
+count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count" id="ba84297d-20ac-48c0-b32c-eaaa32f5bbdd"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault" id="a6a528a2-195b-45ce-841b-b60b80cdf20b"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
 declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett sytem, endast engagemang i ett system" searchProperties="true" id="489fe5ec-c56e-4d16-bf4b-534509d5aec8"><con:settings/><con:testStep type="request" name="GetMeasurement - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett sytem, endast engagemang i ett system" searchProperties="true" id="489fe5ec-c56e-4d16-bf4b-534509d5aec8"><con:settings/><con:testStep type="request" name="GetMeasurement - Sven Sturesson" id="ea158e19-1e7e-42af-b59e-fc9a49c2ccb2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8c20e22e-d7e4-4dd0-afe5-1424d1be9588"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -2461,9 +2471,9 @@ count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildc
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="6b4ee1db-3192-426e-aa09-3ddadb11c929"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="967c4aaa-b238-4021-b613-daeea5446c79"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count" id="33b35cde-e8dd-4226-9050-8951905ee5fb"><con:configuration><path>count(//*:measurement)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="No fault" id="68a4241b-9eee-4f4c-a141-6eb670ce8dff"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1';
 declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Timeout från system" searchProperties="true" id="4e1f4e7e-e400-4e67-af1c-3e3423330360"><con:settings/><con:testStep type="request" name="GetMeasurement - Ulla Alm - Timeout"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Ulla Alm - Timeout" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Timeout från system" searchProperties="true" id="4e1f4e7e-e400-4e67-af1c-3e3423330360"><con:settings/><con:testStep type="request" name="GetMeasurement - Ulla Alm - Timeout" id="03563ce3-1173-4920-8e17-0ab221e97527"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Ulla Alm - Timeout" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="609e1dc7-954e-4d8d-8a99-6326ed7b7aaf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -2530,7 +2540,7 @@ count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildc
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="Timeout count"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="ed1984ba-6f25-411f-89c1-2f526a91748d"><con:settings/><con:testStep type="request" name="GetMeasurement - Gunbritt Boden - Error"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Gunbritt Boden - Error" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="6acd1429-1323-4418-a1d6-3093bcaa7609"/><con:assertion type="XPath Match" name="Timeout count" id="634e49d7-b5fb-4489-9810-5fc946703f29"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatus count" id="f874f4f8-a506-4347-97a2-dbfde624e3fb"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count" id="e1fa4e5a-1a5d-4e73-a193-1073d2326838"><con:configuration><path>count(//*:measurement)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="ed1984ba-6f25-411f-89c1-2f526a91748d"><con:settings/><con:testStep type="request" name="GetMeasurement - Gunbritt Boden - Error" id="76b7a8d0-ae06-495b-af37-d7fe0bb8b455"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetMeasurementResponderBinding</con:interface><con:operation>GetMeasurement</con:operation><con:request name="GetMeasurement - Gunbritt Boden - Error" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="90338ed1-d774-46e1-b064-72e4d72baa7e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="ORG_SENDERID"/>
   &lt;con:entry key="x-vp-sender-id" value="${#Project#senderId}"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
@@ -2597,4 +2607,4 @@ count(/soap:Envelope/soap:Body/soap:Fault)</path><content>0</content><allowWildc
          <!--You may enter ANY elements at this point-->
       </urn1:GetMeasurement>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatus count"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Error count"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>serviceEndpoint</con:name><con:value>localhost:8081</con:value></con:property><con:property><con:name>serviceEndpointVp</con:name><con:value>localhost:20000</con:value></con:property><con:property><con:name>serviceDomain</con:name><con:value>riv:clinicalprocess:healthcond:basic</con:value></con:property><con:property><con:name>categorization</con:name><con:value>chb-gm</con:value></con:property><con:property><con:name>senderId</con:name><con:value>client</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="2e01acf8-156e-47c7-86b1-8da9604c3a93"/><con:assertion type="XPath Match" name="ProcessingStatus count" id="ae92494a-ee56-4892-8f05-64f5dae5ae29"><con:configuration><path>count(//*:ProcessingStatus/*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Error count" id="1f6c48be-c512-44cb-84f2-d145063d2cb0"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="OK count" id="74c8b4ad-1c5b-4655-a487-0118b83629e9"><con:configuration><path>count(//*:measurement)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond_basic:GetMeasurementResponder:1:GetMeasurement"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/basic/GetMeasurement/1/rivtabp21</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>serviceEndpoint</con:name><con:value>localhost:8081</con:value></con:property><con:property><con:name>serviceEndpointVp</con:name><con:value>localhost:20000</con:value></con:property><con:property><con:name>serviceDomain</con:name><con:value>riv:clinicalprocess:healthcond:basic</con:value></con:property><con:property><con:name>categorization</con:name><con:value>chb-gm</con:value></con:property><con:property><con:name>senderId</con:name><con:value>client</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
