@@ -6,26 +6,27 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 [soi-toolkit.gen.createDate=2014-08-26T15:24:53.124+02:00]
 [soi-toolkit.gen.artifactId=GetAggregatedMeasurement]
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-        <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
-        <artifactId>GetAggregatedMeasurement-parent</artifactId>
-        <version>1.0.0-RC6-SNAPSHOT</version>
-    </parent>
+  <parent>
+    <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
+    <artifactId>GetAggregatedMeasurement-parent</artifactId>
+    <version>1.0.0-RC6-SNAPSHOT</version>
+  </parent>
 
-	<groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
-	<artifactId>GetAggregatedMeasurement-schemas</artifactId>
-    <packaging>jar</packaging>
-    <name>GetAggregatedMeasurement-schemas</name>
+  <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.basic</groupId>
+  <artifactId>GetAggregatedMeasurement-schemas</artifactId>
+  <packaging>jar</packaging>
+  <name>GetAggregatedMeasurement-schemas</name>
 
-	<properties>
+  <properties>
         <!-- Properties for generating code from WSDL and XML Schemas (JAX-WS + JAXB) -->
-        <schema.path>${basedir}/src/main/resources/schemas</schema.path>
-        <schema.gen.src.dir>${project.build.directory}/generated-sources/cxf</schema.gen.src.dir>
-	</properties>
+    <schema.path>${basedir}/src/main/resources/schemas</schema.path>
+    <schema.gen.src.dir>${project.build.directory}/generated-sources/cxf</schema.gen.src.dir>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -37,77 +38,77 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     </dependency>
   </dependencies>
 
- 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.cxf</groupId>
-				<artifactId>cxf-codegen-plugin</artifactId>
-				<configuration>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-codegen-plugin</artifactId>
+        <configuration>
 					<!-- fork to avoid encoding issues, ref: soi-toolkit issue 360 -->
-					<fork>once</fork>
-					<additionalJvmArgs>-Dfile.encoding=UTF-8</additionalJvmArgs>
-				</configuration>
-					<executions>
-						<execution>
-							<id>ws.generate</id>
-							<phase>generate-sources</phase>
-							<configuration>
-								<sourceRoot>${schema.gen.src.dir}</sourceRoot>
-								<wsdlOptions>
-									<wsdloption>
-					                  <wsdl>${schema.path}/TD_CLINICALPROCESS_HEALTHCOND_BASIC_1.0_RC1/interactions/GetMeasurementInteraction/GetMeasurementInteraction_1.0_RIVTABP21.wsdl</wsdl>
-					                  <extraargs>
-					                    <extraarg>-p</extraarg>
-					                    <extraarg>http://www.w3.org/2005/08/addressing=org.w3c.addressing.v1</extraarg>
-					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1=riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1</extraarg>
-					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementInitiator:1=riv.clinicalprocess.healthcond.basic.getmeasurementinitiator.v1</extraarg>
-					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21=riv.clinicalprocess.healthcond.basic.getmeasurement.v1.rivtabp21</extraarg>
-					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:itintegration:registry:1=riv.itintegration.registry.v1</extraarg>
-					                    <extraarg>-p</extraarg>
-					                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:1=riv.clinicalprocess.healthcond.basic.v1</extraarg>
-					                  </extraargs>
-					                </wsdloption>
-								</wsdlOptions>
-							</configuration>
-							<goals>
-								<goal>wsdl2java</goal>
-							</goals>
-					</execution>
-				</executions>
-			</plugin>
+          <fork>once</fork>
+          <additionalJvmArgs>-Dfile.encoding=UTF-8</additionalJvmArgs>
+        </configuration>
+        <executions>
+          <execution>
+            <id>ws.generate</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <sourceRoot>${schema.gen.src.dir}</sourceRoot>
+              <wsdlOptions>
+                <wsdloption>
+                  <wsdl>${schema.path}/TD_CLINICALPROCESS_HEALTHCOND_BASIC_1.0_RC1/interactions/GetMeasurementInteraction/GetMeasurementInteraction_1.0_RIVTABP21.wsdl</wsdl>
+                  <extraargs>
+                    <extraarg>-p</extraarg>
+                    <extraarg>http://www.w3.org/2005/08/addressing=org.w3c.addressing.v1</extraarg>
+                    <extraarg>-p</extraarg>
+                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementResponder:1=riv.clinicalprocess.healthcond.basic.getmeasurementresponder.v1</extraarg>
+                    <extraarg>-p</extraarg>
+                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurementInitiator:1=riv.clinicalprocess.healthcond.basic.getmeasurementinitiator.v1</extraarg>
+                    <extraarg>-p</extraarg>
+                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:GetMeasurement:1:rivtabp21=riv.clinicalprocess.healthcond.basic.getmeasurement.v1.rivtabp21</extraarg>
+                    <extraarg>-p</extraarg>
+                    <extraarg>urn:riv:itintegration:registry:1=riv.itintegration.registry.v1</extraarg>
+                    <extraarg>-p</extraarg>
+                    <extraarg>urn:riv:clinicalprocess:healthcond:basic:1=riv.clinicalprocess.healthcond.basic.v1</extraarg>
+                  </extraargs>
+                </wsdloption>
+              </wsdlOptions>
+            </configuration>
+            <goals>
+              <goal>wsdl2java</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 
-			<plugin>
+      <plugin>
 				<!-- Create a zip-file only containing wsdl & xsd files, i.e. no JAX-WS/JAXB-generated artifacts, for example for a Microsoft .Net C# app -->
-				<artifactId>maven-assembly-plugin</artifactId>
-				<dependencies>
-					<dependency>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <dependencies>
+          <dependency>
 						<!-- Plugin-dependency to a shared assembly-descriptor that creates the zip-file -->
-						<groupId>org.soitoolkit.commons.poms</groupId>
-						<artifactId>soitoolkit-assembly-descriptors</artifactId>
-						<version>${soitoolkit.version}</version>
-					</dependency>
-				</dependencies>
-				<executions>
-					<execution>
-						<id>make-assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<descriptors>
-								<descriptor>schema-assembly-descriptor.xml</descriptor>
-							</descriptors>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+            <groupId>org.soitoolkit.commons.poms</groupId>
+            <artifactId>soitoolkit-assembly-descriptors</artifactId>
+            <version>${soitoolkit.version}</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>schema-assembly-descriptor.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
 
-		</plugins>
-	</build>
+    </plugins>
+  </build>
 
 </project>
