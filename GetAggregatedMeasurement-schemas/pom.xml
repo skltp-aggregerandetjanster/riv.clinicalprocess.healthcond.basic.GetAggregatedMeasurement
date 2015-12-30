@@ -23,7 +23,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
   <name>GetAggregatedMeasurement-schemas</name>
 
   <properties>
-        <!-- Properties for generating code from WSDL and XML Schemas (JAX-WS + JAXB) -->
+    <!-- Properties for generating code from WSDL and XML Schemas (JAX-WS + JAXB) -->
     <schema.path>${basedir}/src/main/resources/schemas</schema.path>
     <schema.gen.src.dir>${project.build.directory}/generated-sources/cxf</schema.gen.src.dir>
   </properties>
@@ -44,7 +44,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-codegen-plugin</artifactId>
         <configuration>
-					<!-- fork to avoid encoding issues, ref: soi-toolkit issue 360 -->
+          <!-- fork to avoid encoding issues, ref: soi-toolkit issue 360 -->
           <fork>once</fork>
           <additionalJvmArgs>-Dfile.encoding=UTF-8</additionalJvmArgs>
         </configuration>
@@ -82,11 +82,11 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
       </plugin>
 
       <plugin>
-				<!-- Create a zip-file only containing wsdl & xsd files, i.e. no JAX-WS/JAXB-generated artifacts, for example for a Microsoft .Net C# app -->
+        <!-- Create a zip-file only containing wsdl & xsd files, i.e. no JAX-WS/JAXB-generated artifacts, for example for a Microsoft .Net C# app -->
         <artifactId>maven-assembly-plugin</artifactId>
         <dependencies>
           <dependency>
-						<!-- Plugin-dependency to a shared assembly-descriptor that creates the zip-file -->
+            <!-- Plugin-dependency to a shared assembly-descriptor that creates the zip-file -->
             <groupId>org.soitoolkit.commons.poms</groupId>
             <artifactId>soitoolkit-assembly-descriptors</artifactId>
             <version>${soitoolkit.version}</version>
