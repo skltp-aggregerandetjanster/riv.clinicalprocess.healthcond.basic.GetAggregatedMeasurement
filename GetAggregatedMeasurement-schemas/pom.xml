@@ -99,9 +99,9 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
               <goal>single</goal>
             </goals>
             <configuration>
-              <descriptors>
-                <descriptor>schema-assembly-descriptor.xml</descriptor>
-              </descriptors>
+              <descriptorRefs>
+                <descriptorRef>schema-assembly-descriptor</descriptorRef>
+              </descriptorRefs>
             </configuration>
           </execution>
         </executions>
